@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Stavya</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="terminal-container">
+    <div class="terminal-header">
+      <div class="terminal-buttons">
+        <span class="terminal-button red"></span>
+        <span class="terminal-button yellow"></span>
+        <span class="terminal-button green"></span>
+      </div>
+      <span class="terminal-title">stavya@portfolio:~$</span>
+    </div>
+    <div class="terminal-body" id="terminal">
+      <div class="terminal-output" id="terminalOutput">
+        <div class="command-line">
+          <span class="prompt">stavya@portfolio:~$</span>
+          <span class="command"></span>
+        </div>
+        <div class="output welcome-message">
+          <pre>
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║   Welcome to Stavya Gaonkar's Portfolio                      ║
+║   Type 'help' to see available commands                      ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+                    </pre>
+        </div>
+      </div>
+      <div class="terminal-input-container">
+        <span class="prompt">stavya@portfolio:~$</span>
+        <input type="text" class="terminal-input" id="terminalInput" autocomplete="off" spellcheck="false" autofocus>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden data templates -->
+  <script type="application/json" id="projectsData">
+[
+  {
+    "name": "Science Bowl Discord Bot",
+    "description": "A Discord bot designed to help students practice for Science Bowl competitions with interactive quizzes, questions, and competition-style gameplay.",
+    "tags": ["Python", "Discord"],
+    "link": "https://github.com/gstavya/scibowl-discord-bot",
+    "video": "videos/scibowl_bot.mp4",
+    "image": "images/scibowlbot.png"
+  },
+  {
+    "name": "Science Bowl AI",
+    "description": "An AI-powered application designed to help students prepare for Science Bowl competitions through intelligent question answering and study assistance.",
+    "tags": ["Python", "AI"],
+    "link": "https://github.com/gstavya/sciencebowl-ai"
+  },
+  {
+    "name": "AI Grading Assistant",
+    "description": "An intelligent grading system that uses AI to evaluate assignments, provide feedback, and assist educators in streamlining the grading process.",
+    "tags": ["Python", "AI"],
+    "link": "https://github.com/gstavya/ai-grading-assistant"
+  },
+  {
+    "name": "Productivity AI",
+    "description": "An AI-powered productivity tool that helps users manage tasks, optimize workflows, and enhance daily productivity through intelligent automation.",
+    "tags": ["Python", "AI"],
+    "link": "https://github.com/gstavya/productivity-ai",
+    "video": "videos/Productivity AI Demo.mp4",
+    "image": "images/productivity_ai.png"
+  },
+  {
+    "name": "LingoLearn AI",
+    "description": "An AI-driven language learning platform that helps users master new languages through intelligent tutoring and personalized feedback.",
+    "tags": ["Python", "AI"],
+    "link": "https://github.com/gstavya/lingolearn-ai",
+    "video": "videos/LingoLearn AI Video.mp4",
+    "image": "images/lingolearnai.png"
+  },
+  {
+    "name": "Assignment Bot",
+    "description": "An AI-powered bot that helps students manage assignments, track deadlines, and get assistance with homework tasks and project organization.",
+    "tags": ["Python", "AI"],
+    "link": "https://github.com/gstavya/assignment-bot"
+  },
+  {
+    "name": "Gesture Browser",
+    "description": "A browser extension that enables gesture-based navigation and actions, allowing users to perform different browser operations through intuitive hand gestures.",
+    "tags": ["JavaScript", "Browser Extension"],
+    "link": "https://github.com/gstavya/gesture-browser",
+    "video": "videos/gesture_browser.mp4",
+    "image": "images/gesture_browser.png"
+  },
+  {
+    "name": "Car Detection",
+    "description": "An AI-powered tool that integrates with Google Maps to automatically identify and classify car brands from street view imagery, providing detailed vehicle analytics.",
+    "tags": ["Python", "Computer Vision"],
+    "link": "https://github.com/gstavya/car_detection",
+    "video": "videos/car_detector.mp4",
+    "image": "images/car_detection.png"
+  },
+  {
+    "name": "Ask the Author",
+    "description": "A RAG-based AI system that performs retrieval-augmented generation on books I've read, allowing users to ask questions and get intelligent responses based on the content.",
+    "tags": ["Python", "RAG"],
+    "link": "https://github.com/gstavya/ask-the-author",
+    "video": "videos/books_read.mp4",
+    "image": "images/books_read.png"
+  },
+  {
+    "name": "SafePark AI",
+    "description": "An AI-powered parking safety application developed for the Congressional App Challenge, helping users find and assess safe parking spots.",
+    "tags": ["Python", "AI", "Mobile App"],
+    "link": "https://github.com/gstavya",
+    "video": "videos/SafePark AI (Congressional App Challenge).mp4",
+    "image": "images/safepark.png"
+  }
+]
+    </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
