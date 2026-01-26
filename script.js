@@ -159,9 +159,9 @@ class Terminal {
             // Find original index for data reference
             const originalIndex = this.data.indexOf(project);
             let videoLink = '';
-            if (project.video) {
-                videoLink = ` | <a href="${project.video}" download class="download-link">Demo</a>`;
-            }
+            // if (project.video) {
+            //     videoLink = ` | <a href="${project.video}" download class="download-link">Demo</a>`;
+            // }
 
             let imageHtml = '';
             if (project.image) {
@@ -212,9 +212,9 @@ class Terminal {
         }
 
         let videoLink = '';
-        if (project.video) {
-            videoLink = ` | <a href="${project.video}" download class="download-link">Download Demo</a>`;
-        }
+        // if (project.video) {
+        //     videoLink = ` | <a href="${project.video}" download class="download-link">Download Demo</a>`;
+        // }
 
         let imageHtml = '';
         if (project.image) {
